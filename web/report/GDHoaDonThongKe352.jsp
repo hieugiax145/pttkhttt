@@ -82,8 +82,6 @@
             List<HoaDonNhapThongKe352> danhSachHoaDon = hoaDonDAO.getHoaDonTheoNhaCungCap(nhaCungCapId, startDate, endDate);
         %>
 
-        <h2>Danh sách hóa đơn</h2>
-
         <table>
             <thead>
                 <tr>

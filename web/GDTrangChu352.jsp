@@ -117,7 +117,7 @@
         <h2>Trang chủ</h2>
 
         <div class="toolbar">
-            <a href="GDDangKyThe352.jsp">Đăng ký thẻ bạn đọc</a>
+            <a href="dangky/GDDangKyThe352.jsp">Đăng ký thẻ bạn đọc</a>
             <div class="dropdown">
                 <a href="#">Xem báo cáo</a>
                 <div class="dropdown-content">
@@ -169,16 +169,16 @@
             });
 
             confirmPopup.addEventListener('click', () => {
-                const startDate = document.getElementById('start-date');
-                const endDate = document.getElementById('end-date');
+                const startDate = document.getElementById('start-date').value;
+                const endDate = document.getElementById('end-date').value;
 
 
-                // Construct 1  the URL with query parameters
+              
                 let url = `report/GDNhaCungCap352.jsp`;
 //                if (startDate) {
-                url += `?start-date=${startDate}`;
+                url += `?start-date=`+startDate;
 //                    if (endDate) {
-                url += `&end-date=2024-09-01`;
+                url += `&end-date=`+endDate;
 //                    }
 //                } else if (endDate) {
 //                    url += `?end-date=${endDate}`;
